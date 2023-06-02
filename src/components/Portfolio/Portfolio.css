@@ -1,0 +1,113 @@
+.wrapper{
+    background: white;
+    overflow: hidden;
+}
+.contained{
+    flex-direction: column;
+    display: flex;
+    gap: 2rem;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;    
+}
+.heads{
+    font-weight: 600;
+
+}
+.tops{
+    font-size: 3.5rem;
+}
+.para{
+    font-size: 1.5rem;
+}
+.Exp{
+    text-decoration: underline;
+    color: orange;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+.showCase{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 3.8rem;
+    width: 100%;
+    margin-bottom: 5rem;
+    
+}
+
+
+.showCase .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 1rem 1rem rgb(207, 205, 205);
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+  
+
+}
+
+
+.portfolio-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img{
+     transform: scale(1.1);
+    }
+.portfolio-box:hover .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 0, .1), rgb(236, 229, 190));
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 2rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+.portfolio-layer{
+    transform: translateY(0);
+}
+.portfolio-layer h4{
+    font-size: 1.5rem;
+}
+.portfolio-layer p{
+    font-size: .8rem;
+    margin: .2rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+
+}
+.portfolio-layer a i{
+    font-size: 1.2rem;
+    color: var(--second-bg-color);
+}
+
+@media screen and (max-width:480px){
+    .tops{
+        font-size: 2.5rem;
+    }
+    .para{
+        font-size: 1.2rem;
+    }
+    .Exp{
+        font-size: 1.5rem;
+    }
+}
+

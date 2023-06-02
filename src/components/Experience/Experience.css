@@ -1,0 +1,89 @@
+section{
+    padding: 3rem;
+    background-color: #F8F7F1;
+}
+.primaryTextss{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+.contains{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.experiences{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    position: relative;
+}
+.exps{
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    align-items: flex-start;
+}
+.post{
+    width: 45%;
+}
+.role{
+    width: 45%;
+}
+.progressbar{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    left: 45%;
+}
+ .line{
+                position: absolute;
+                height: 96%;
+                width: 2px;
+                left: 48%;
+                z-index: 1;
+                border-radius: 5px;
+                background-image:  linear-gradient(black 33%, rgba(225, 225, 225, 0) 0%);
+                background-position:  right;
+                background-size: 2px 30px;
+                background-repeat: repeat-y;
+              }
+              .circle{
+                border-radius: 50%;
+                background-color: #000;
+                width: 1.2rem;
+                height: 1.2rem;
+              }
+              .cover{
+                flex: 1;
+                padding-top: .8rem;
+                z-index: 2;
+              }
+
+              @media screen and (max-width:980px) {
+                .primaryTextss{
+                    font-size: 2rem;
+                    
+                }
+                .exps{
+                    line-height: 30px;
+                }
+                .exps h1{
+                    font-size: 1.2rem;
+                }
+                .exps p{
+                    font-size: .8rem;
+                }
+                .role h1{
+                    font-size: 1.2rem;
+                }
+                .role p{
+                    font-size: .8rem;
+                }
+                .circle{
+                    width: .8rem;
+                    height: .8rem;
+                  }
+              }

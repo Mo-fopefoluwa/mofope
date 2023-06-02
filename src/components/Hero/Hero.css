@@ -1,0 +1,122 @@
+.primaryText {
+    /* @media (max-width: $sm) {
+      font-size: 2.5rem;
+    } */
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .secondaryText {
+    /* @media (max-width: $sm) {
+      font-size: 1.1rem;
+      line-height: 40px;
+    } */
+    line-height: 26px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-top: 8px;
+  }
+  .secondaryTexts{
+    line-height: 50px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding-top: 8px;
+  }
+  .experience{
+    display: flex;
+    gap: 1rem;
+  }
+  .upperElement{
+    pointer-events: none;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sections{
+    padding: 1.5rem;
+  }
+  .lowerElement{
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;    
+  }
+  .containers{
+    display: block;
+    padding: 3rem;
+  }
+  .certificate{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .certificate img{
+    width: 45px;
+  }
+  .certificate span{
+    font-size: 20px;
+  }
+  .person{
+/*            
+    @media (max-width: $sm), (max-width: $md) {
+        position: relative;
+        left: 0;
+        background-size: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: bottom;
+    } */
+
+    position: absolute;
+    bottom: -2rem;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: 23rem;
+    left: 33%;
+}
+.email{
+    /* @media (max-width: $sm) {
+        position: relative;
+        display: none;
+    } */
+
+    position: absolute;
+    top: 70%;
+    left: 4.5rem;
+    color: orange;
+}
+@media screen and (max-width:480px) {
+  .upperElement{
+    justify-content: center;
+    flex-direction:column;
+    gap: 2rem;
+     }
+     .primaryText{
+      font-size: 2.5rem;
+     }
+     .lowerElement{
+      margin-top: 4rem;
+      gap: 2rem;
+      justify-content: center;
+     }
+     .certificate img{
+      width: 2.3rem;
+     }
+     .person{
+      position: relative;
+      left: 0;
+      background-size: 20rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-position: bottom;
+     }
+     .email{
+      position: relative;
+                display: none;
+     }
+     primaryText {
+      font-size: 2.5rem;
+    
+  }
+}

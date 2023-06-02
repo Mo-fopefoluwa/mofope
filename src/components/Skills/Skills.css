@@ -1,0 +1,166 @@
+.headingss{
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.headingss span{
+    color: orange;
+}
+.services-container{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.services-box {
+    flex: 1 1 20rem;
+   
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+
+}
+.services-container .cards{
+  position: relative;
+  width: 220px;
+  height: 250px;
+  border-radius: 20%;
+  box-shadow: 0 20px 30px rgba(126, 128, 30, 0.644);
+ background: #fff;
+ display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services-container .cards .percent{
+    position: relative;
+    width:150px;
+    height: 150px;
+}
+.services-container .cards .percent svg{
+    position: relative;
+      width:150px;
+    height: 150px;
+}
+.tml circle, .jas circle, .ss circle, .rcts circle, .gits circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke-width: 11;
+    stroke: transparent;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+}
+.tml circle:nth-child(1), .jas circle:nth-child(1), .ss circle:nth-child(1),.rcts circle:nth-child(1), .gits circle:nth-child(1){
+    stroke:rgb(56, 104, 56);
+    opacity: 10%;
+    stroke-dashoffset: 0;
+}
+.services-container .cards .percent .tml circle:nth-child(2){
+    stroke: orange;
+    stroke-dashoffset: 70;
+}
+.services-container .cards .percent .ss circle:nth-child(2){
+    stroke: orange;
+    stroke-dashoffset: 90;
+}
+.services-container .cards .percent .jas circle:nth-child(2){
+    stroke: orange;
+    stroke-dashoffset: 115;
+}
+.services-container .cards .percent .gits circle:nth-child(2){
+    stroke: orange;
+    stroke-dashoffset:255 ;
+}
+.services-container .cards .percent .rcts circle:nth-child(2){
+    stroke: orange;
+    stroke-dashoffset: 155;
+}
+
+ .cards .percent .num{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    opacity: 70%;
+ }
+ .cards{
+    width: 100%;
+    text-align: center;
+ }
+ .texttt{
+    margin-top: 2px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.863);
+    /* padding: 10px 0 30px 0; */
+ }
+
+.services-container .services-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+.services-box i{
+    font-size: 4rem;
+    color: var(--main-color);
+
+}
+.services-box h3{
+    font-size: 1.5rem;
+}
+.services-box p{
+    font-size: .8rem;
+    margin: 1rem 0 3rem;
+}
+@media screen and (max-width:980px) {
+    .services {
+        padding-bottom: 7rem 3%;
+       }
+       .showCase{
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr );
+        
+      }
+
+}
+@media screen and (max-width:480px) {
+    .cards .percent .num{
+        position: absolute;
+        top: 20px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 25px;
+        opacity: 70%;
+     }
+     .services h2{
+        margin-bottom: 3rem;
+      }
+      .showCase{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr );
+        
+      }
+      .portfolio-layer h4{
+        font-size: 25px;
+    }
+    .portfolio-layer p{
+        font-size: 15px;
+    }
+}
