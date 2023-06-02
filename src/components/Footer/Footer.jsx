@@ -24,8 +24,8 @@ const Footer = () => {
         <div className="rightside">
              <motion.div
              variants={fadeIn("up", "tween", 0.7, 0.6)} className="topsss">
-                <h4>Information</h4>
-                <p>145 New York, FL 5467, USA</p>
+                <h4>&copy; copyright•2023</h4>
+                <p>Ibadan/ Lagos, Nigeria</p>
 
              </motion.div>
              {/* <motion.ul className='navi'

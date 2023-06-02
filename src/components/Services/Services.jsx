@@ -28,7 +28,7 @@ const Services = () => {
                                
                             </span>
                             <span className='secondaryTexts'>
-                                 {exp.projects} Projects
+                                 {exp.projects} {exp.time}
                                  </span>
                              </div>
                     </motion.div>
@@ -52,7 +52,7 @@ const Services = () => {
                     })
                 }
 
-                <div className="stats">
+                {/* <div className="stats">
                    <div className="stat"> 
                    <span className='primaryText'>285+</span>
                    <span className='secondaryTextsss'>Projects Completed</span>
@@ -61,7 +61,7 @@ const Services = () => {
                    <span className='primaryText'>190+</span>
                    <span className='secondaryTextsss'>Happy Customers</span>
                    </div>
-                </div>
+                </div> */}
            </motion.div>
            
         </motion.div>

@@ -1,15 +1,10 @@
 .primaryText {
-    /* @media (max-width: $sm) {
-      font-size: 2.5rem;
-    } */
+    
     font-size: 3rem;
     font-weight: bold;
   }
   .secondaryText {
-    /* @media (max-width: $sm) {
-      font-size: 1.1rem;
-      line-height: 40px;
-    } */
+  
     line-height: 26px;
     font-size: 1.3rem;
     font-weight: 500;
@@ -21,6 +16,32 @@
     font-weight: 500;
     padding-top: 8px;
   }
+  .social-media a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: .5rem;
+    height: .5rem;
+    margin: 1rem;
+    padding: 1rem;
+    background: orange;
+    border-radius: 50%;
+    font-size: .4rem; 
+    /* color: orange; */
+    transition: all .5s ease;
+    box-shadow: 0 .4rem 1.8rem gray;
+}
+.social-media a i{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+
+.social-media a:hover{
+    color: rgb(241, 184, 136);
+    
+    cursor: pointer;
+}
   .experience{
     display: flex;
     gap: 1rem;
@@ -33,6 +54,7 @@
   }
   .sections{
     padding: 1.5rem;
+    background-color:  #F8F7F1;
   }
   .lowerElement{
     pointer-events: none;
@@ -56,29 +78,21 @@
     font-size: 20px;
   }
   .person{
-/*            
-    @media (max-width: $sm), (max-width: $md) {
-        position: relative;
-        left: 0;
-        background-size: 20rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-position: bottom;
-    } */
 
     position: absolute;
     bottom: -2rem;
     margin: auto;
     background-repeat: no-repeat;
-    background-size: 23rem;
-    left: 33%;
+    background-size: 20rem;
+    left: 35%;
+    width: 18rem;
+
+}
+.person img{
+  width: 100%;
+  margin-top: -9rem;
 }
 .email{
-    /* @media (max-width: $sm) {
-        position: relative;
-        display: none;
-    } */
 
     position: absolute;
     top: 70%;
@@ -107,6 +121,10 @@
       align-items: center;
       justify-content: center;
      }
+     .social-media a i{
+      font-size: 1.5rem;
+  }
+     
      .certificate img{
       width: 2rem;
       margin-bottom: 1rem;
@@ -114,11 +132,14 @@
      .person{
       position: relative;
       left: 0;
-      background-size: 20rem;
+      background-size: 13rem;
       display: flex;
       align-items: center;
       justify-content: center;
       background-position: bottom;
+     }
+     .person img{
+      width: 100%;
      }
      .email{
       position: relative;

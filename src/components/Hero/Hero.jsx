@@ -30,7 +30,7 @@ const Hero = () => {
           <motion.div
            variants={fadeIn("up", "tween", 0.3, 1)}
           className="person" style={{ backgroundImage: "url('/splash.png')"}}>
-            <img src="../person.png" alt="" />
+            <img src="me.png" alt="" />
 
           </motion.div>
           <a href="/" className="email">fopefaokunla@gmail.com</a>
@@ -38,7 +38,7 @@ const Hero = () => {
             <motion.div 
             variants={fadeIn("right", "tween", 0.2, 1)}
             className="experience">
-            <div className="primaryText">3</div>
+            <div className="primaryText">2</div>
                 <div className='secondaryText'>
                     <div>
                         Years
@@ -52,12 +52,23 @@ const Hero = () => {
             variants={fadeIn("left", "tween", 0.4, 1)}
              className="certificate">
             <img src='../certificate.png' alt='logo' />
-                <span>
+                {/* <span>
                     Certified Professional
-                </span>
+                </span> */}
                     <span>
                         Frontend Developer
                    </span>
+                   <div class="social-media">
+          <a href="https://github.com/Mo-fopefoluwa">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/mofopefoluwa-faokunla-61abb622a"
+            ><i class='bx bxl-linkedin'></i></a>
+          <a href="https://instagram.com/Mofope_foluwa"
+            ><i class='bx bxl-instagram-alt' ></i></a>
+          <a href="https://twitter.com/Mofopefoluwa__"
+            ><i class='bx bxl-twitter' ></i></a>
+        </div>
             </motion.div>
           </div>
           </motion.div>
