@@ -1,7 +1,7 @@
 import './Header.css';
 import { motion } from 'framer-motion';
 import  {useState} from 'react';
-import {getMenuStyles,  headerVariants} from '../../utils/motion'
+import {  headerVariants} from '../../utils/motion'
 import {BiMenu, BiPhoneCall} from 'react-icons/bi'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
 
@@ -11,8 +11,7 @@ const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
     const headerShadow = useHeaderShadow()
   return (
-    <div
-   >
+    
         <motion.div className="section" 
          initial= "hidden"
          whileInView="show"
@@ -22,7 +21,7 @@ const Header = () => {
             <div className="container">
                 <p className='logo'>Mofopefoluwa</p>
 
-                <ul style={getMenuStyles(menuOpened)}>
+                <ul className='bigScreen'>
                     <li><a href='/'>Home</a></li>
                     <li><a href='/'>Experience</a></li>
                     <li><a href='/'>Skills</a></li>
@@ -34,14 +33,32 @@ const Header = () => {
                     </li>
                 </ul>
                 <div className="menuIcon"
-            onClick={() =>setMenuOpened ((prev)=>!prev)}>
-                <BiMenu size={30} />
+            onClick={() => setMenuOpened(!menuOpened)}>
+                <BiMenu size={40} className='menus'/>
+                { menuOpened && <Results />  }
+                
             </div>
+           
             </div>
             </motion.div>  
-        </div>
+    
     
   )
 }
+const Results = () => (
+   
+        <ul className='response'>
+    <li><a href='/'>Home</a></li>
+    <li><a href='/'>Experience</a></li>
+    <li><a href='/'>Skills</a></li>
+    <li><a href='/'>Portfolio</a></li>
+    <li className='num'><a href='/'>
+        <p>08154980688  <BiPhoneCall size={"25px"} /></p>
+       
+        </a>
+    </li>
+</ul>
+    );
+
 
 export default Header

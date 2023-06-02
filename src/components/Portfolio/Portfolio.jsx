@@ -44,8 +44,7 @@ const Portfolio = () => {
               page built with jsx, css and react app.
             </p>
             <a href="https://help-center-site.vercel.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+             target='_blank' ><i class="bx bx-link-external" ></i ></a>
           </div>
           
         </motion.div>
@@ -85,15 +84,29 @@ const Portfolio = () => {
           </div>
           
         </motion.div>
-             {/* <motion.div
-              variants={fadeIn("up", "tween", 0.5, 0.6)}
-              className="portfolio-cover">
-            <img
-           
-            src="./showCase1.png"
-            alt="project"
-            />
-              <div class="portfolio-layer">
+        <motion.div
+              variants={fadeIn("up", "tween", 1.1, 0.6)}
+               class="portfolio-box">
+        
+          <img src="./showCase1.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Help Center Page</h4>
+            <p>
+              A beautiful functional responsive and user-friendly help center
+              page built with jsx, css and react app.
+            </p>
+            <a href="https://help-center-site.vercel.app/"
+             target='_blank' ><i class="bx bx-link-external" ></i ></a>
+          </div>
+          
+        </motion.div>
+
+        <motion.div
+              variants={fadeIn("up", "tween", 1.3, 0.6)}
+               class="portfolio-box">
+        
+          <img src="./showCase2.png" alt="" />
+          <div class="portfolio-layer">
             <h4>Help Center Page</h4>
             <p>
               A beautiful functional responsive and user-friendly help center
@@ -103,20 +116,27 @@ const Portfolio = () => {
               ><i class="bx bx-link-external"></i
             ></a>
           </div>
-            </motion.div> */}
+         
+        </motion.div>
 
-            {/* <motion.img
-            variants={fadeIn("up", "tween", 0.7, 0.6)}
-            src="./showCase2.png"
-            alt="project"
-            />
-
-            <motion.img
-            variants={fadeIn("up", "tween", 0.9, 0.6)}
-            src="./showCase3.png"
-            alt="project"
-            />  */}
-                     
+        <motion.div
+              variants={fadeIn("up", "tween", 1.6, 0.6)}
+               class="portfolio-box">
+        
+          <img src="./showCase3.png" alt="" />
+          <div class="portfolio-layer">
+            <h4>Help Center Page</h4>
+            <p>
+              A beautiful functional responsive and user-friendly help center
+              page built with jsx, css and react app.
+            </p>
+            <a href="https://help-center-site.vercel.app/"
+              ><i class="bx bx-link-external"></i
+            ></a>
+          </div>
+          
+        </motion.div>
+            
            </div>
 
         </div>
