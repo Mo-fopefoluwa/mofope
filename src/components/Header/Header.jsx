@@ -1,5 +1,5 @@
 import './Header.css';
-
+import { Link, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import  {useState} from 'react';
 import {  headerVariants} from '../../utils/motion'
@@ -23,16 +23,17 @@ const Header = () => {
                 <p className='logo'>Mofopefoluwa</p>
 
                 <ul className='bigScreen'>
-                    <li><a href='./Home'>Home</a></li>
-                    <li><a href='./Experience'>Experience</a></li>
-                    <li><a href='./Skills'>Skills</a></li>
-                    <li><a href='./Portfolio'>Portfolio</a></li>
+                    <li><a href='/'><Link to='/Home' > Home</Link></a></li>
+                    <li><a href='/'><Link to='/Experience' >Experience</Link></a></li>
+                    <li><a href='/Skills'><Link to='/Skills'>Skills</Link></a></li>
+                    <li><a href='/Portfolio'><Link to='/Portfolio'>Portfolio</Link></a></li>
                     <li className='num'><a href='/'>
                         <p>08154980688  <BiPhoneCall size={"25px"} className='icons'/></p>
                        
                         </a>
                     </li>
                 </ul>
+                <Outlet />
                 <div className="menuIcon"
             onClick={() => setMenuOpened(!menuOpened)}>
                 <BiMenu size={40} className='menus'/>
@@ -49,15 +50,15 @@ const Header = () => {
 const Results = () => (
    
         <ul className='response'>
-    <li><a href='/'>Home</a></li>
-    <li><a href='/'>Experience</a></li>
-    <li><a href='/'>Skills</a></li>
-    <li><a href='/'>Portfolio</a></li>
-    <li className='num'><a href='/'>
-        <p>08154980688  <BiPhoneCall size={"25px"} className='icons' /></p>
-       
-        </a>
-    </li>
+     <li><a href='/'><Link to='/Home' > Home</Link></a></li>
+                    <li><a href='/'><Link to='/Experience' >Experience</Link></a></li>
+                    <li><a href='/Skills'><Link to='/Skills'>Skills</Link></a></li>
+                    <li><a href='/Portfolio'><Link to='/Portfolio'>Portfolio</Link></a></li>
+                    <li className='num'><a href='/'>
+                        <p>08154980688  <BiPhoneCall size={"25px"} className='icons'/></p>
+                       
+                        </a>
+                    </li>
 </ul>
     );
 
