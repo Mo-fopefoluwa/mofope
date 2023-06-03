@@ -2,6 +2,7 @@ import './Header.css';
 import { motion } from 'framer-motion';
 import  {useState} from 'react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {  headerVariants} from '../../utils/motion'
 import {BiMenu, BiPhoneCall} from 'react-icons/bi'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
@@ -22,10 +23,10 @@ const Header = () => {
                 <p className='logo'>Mofopefoluwa</p>
 
                 <ul className='bigScreen'>
-                    <li><a href='/'> Home</a></li>
-                    <li><a href='/'>Experience</a></li>
-                    <li><a href='/'>Skills</a></li>
-                    <li><a href='/'>Portfolio</a></li>
+                    <li><a href='/'><Link to="/hero">Home</Link></a></li>
+                    <li><a href='/'><Link to="/experi">Experience</Link></a></li>
+                    <li><a href='/'><Link to="/skills">Skills</Link></a></li>
+                    <li><a href='/'><Link to="/portfolio">Portfolio</Link></a></li>
                     <li className='num'><a href='/'>
                         <p>08154980688  <BiPhoneCall size={"25px"} className='icons'/></p>
                        

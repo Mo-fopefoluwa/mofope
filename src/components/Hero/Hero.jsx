@@ -7,17 +7,17 @@ import { useEffect, useRef } from "react";
 import { fadeIn, staggerContainer } from '../../utils/motion';
 
 const Hero = () => {
-const myStyles = {
-  fontSize: '1.4rem',
-  fontWeight: 600,
-  marginLeft:'10rem',
-  width:'30%',
-  '@media (max-width: 980px)' :{
-    width:'100%',
-    marginLeft:'0rem',
-  }
+// const myStyles = {
+//   fontSize: '1.4rem',
+//   fontWeight: 600,
+//   marginLeft:'10rem',
+//   width:'30%',
+//   '@media (max-width: 980px)' :{
+//     width:'100%',
+//     marginLeft:'0rem',
+//   }
 
-  }
+//   }
 
 
   const el = useRef(null);
@@ -73,7 +73,7 @@ const myStyles = {
             <motion.div 
             variants={fadeIn("right", "tween", 0.2, 1)}
             className="experience">
-            <div className="primaryText">2</div>
+            <div className="primaryText">1 <sup style={{fontSize:'.8rem'}}> 1/2</sup></div>
                 <div className='secondaryText'>
                     <div>
                         Years
