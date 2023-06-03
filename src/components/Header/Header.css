@@ -1,4 +1,4 @@
-.section{
+ .section{
     position: relative;
     z-index: 99;
     opacity: 100;
@@ -21,10 +21,10 @@
     justify-content: space-between;
 
 }
-.logo{
+ .logo{
     margin-top: 2px;
     font-size: 20px;
-    font-weight: 550;
+    font-weight: 600;
     pointer-events: none;
 }
 .bigScreen{
@@ -81,6 +81,14 @@
 @media screen and (max-width:980px){
     .menuIcon{
         display: block;
+        padding-right: 2.5rem;
+    }
+    .section{
+        width: 100%;
+        padding: 1rem;
+    }
+    .container{
+        padding: .5rem;
     }
     .response{
         display: block;
@@ -92,7 +100,8 @@
     background-color: #F8F7F1;
     }
     .logo{
-        font-size: 15px;
+        font-size: 1.2rem;
+        font-weight: 600;
     }
     .response li {
         display: flex;
@@ -127,7 +136,5 @@
         margin-bottom: -8px;
 
     }
-    .section{
-        padding: 0;
-    }
-}
+    
+} 

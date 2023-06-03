@@ -45,7 +45,7 @@ const Portfolio = () => {
               page built with jsx, css and react app.
             </p>
             <a href="https://help-center-site.vercel.app/"
-             target='_blank' ><i class="bx bx-link-external" ></i ></a>
+             target='_blank' rel="noreferrer" ><i class="bx bx-link-external" ></i ></a>
           </div>
           
         </motion.div>
@@ -64,7 +64,7 @@ const Portfolio = () => {
               sizes. The website features a modern and clean design.
             </p>
             <a href="https://careers-neon.vercel.app/"
-              target='_blank'><i class="bx bx-link-external"></i
+              target='_blank' rel="noreferrer"><i class="bx bx-link-external"></i
             ></a>
           </div>
          
@@ -82,7 +82,7 @@ const Portfolio = () => {
               JavaScript.
             </p>
             <a href="https://sunny-side-project.vercel.app/"
-              target='_blank'><i class="bx bx-link-external"></i
+              target='_blank' rel="noreferrer"><i class="bx bx-link-external"></i
             ></a>
           </div>
           
@@ -99,7 +99,7 @@ const Portfolio = () => {
               OpenWeatherApp API
             </p>
             <a href="https://fops-weather-app.vercel.app/"
-             target='_blank' ><i class="bx bx-link-external" ></i ></a>
+             target='_blank' rel="noreferrer" ><i class="bx bx-link-external" ></i ></a>
           </div>
           
         </motion.div>
@@ -117,7 +117,7 @@ const Portfolio = () => {
               organizations.
             </p>
             <a href="https://fops-to-do.vercel.app/"
-              target='_blank'><i class="bx bx-link-external"></i
+              target='_blank' rel="noreferrer"><i class="bx bx-link-external"></i
             ></a>
           </div>
          

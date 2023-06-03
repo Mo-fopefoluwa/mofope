@@ -1,12 +1,11 @@
 import './Header.css';
-//import { Link, Outlet } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import  {useState} from 'react';
+import React from 'react';
 import {  headerVariants} from '../../utils/motion'
 import {BiMenu, BiPhoneCall} from 'react-icons/bi'
 import useHeaderShadow from '../../hooks/useHeaderShadow'
 
-import React from 'react'
 
 const Header = () => {
     const [menuOpened, setMenuOpened] = useState(false);
@@ -23,14 +22,10 @@ const Header = () => {
                 <p className='logo'>Mofopefoluwa</p>
 
                 <ul className='bigScreen'>
-                    <li><a href='/'>
-                        
-                        Home
-                       
-                        </a></li>
+                    <li><a href='/'> Home</a></li>
                     <li><a href='/'>Experience</a></li>
-                    <li><a href='/Skills'>Skills</a></li>
-                    <li><a href='/Portfolio'>Portfolio</a></li>
+                    <li><a href='/'>Skills</a></li>
+                    <li><a href='/'>Portfolio</a></li>
                     <li className='num'><a href='/'>
                         <p>08154980688  <BiPhoneCall size={"25px"} className='icons'/></p>
                        
@@ -54,12 +49,12 @@ const Header = () => {
 const Results = () => (
    
         <ul className='response'>
-     <li><a href='/'>Home</a></li>
+                    <li><a href='/'>Home</a></li>
                     <li><a href='/'>Experience</a></li>
-                    <li><a href='/Skills'>Skills</a></li>
-                    <li><a href='/Portfolio'>Portfolio</a></li>
+                    <li><a href='/'>Skills</a></li>
+                    <li><a href='/'>Portfolio</a></li>
                     <li className='num'><a href='/'>
-                        <p>08154980688  <BiPhoneCall size={"25px"} className='icons'/></p>
+                        <p>08154980688  <BiPhoneCall size={"22px"} className='icons'/></p>
                        
                         </a>
                     </li>

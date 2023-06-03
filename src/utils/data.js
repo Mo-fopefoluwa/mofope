@@ -11,7 +11,7 @@ export const projectExperience = [
   },
   {
     name: "React Js Developer",
-    projects: 6 ,
+    projects: 4 ,
     time:"months",
     icon: CiMobile1,
     bg: "#EEC048",
