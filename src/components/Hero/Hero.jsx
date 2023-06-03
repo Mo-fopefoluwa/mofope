@@ -24,7 +24,7 @@ const myStyles = {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Frontend Developer","React js Developer","I design beautiful and responsive websites",], // Strings to display
+      strings: ["Frontend Developer","React js Developer","I build beautiful and responsive websites",], // Strings to display
       // Speed settings, try diffrent values untill you get good results
       startDelay: 300,
       typeSpeed: 70,
