@@ -93,17 +93,7 @@ const myStyles = {
                     <span>
                         Frontend Developer
                    </span>
-                   <div class="social-media">
-          <a href="https://github.com/Mo-fopefoluwa/">
-            <i class="bx bxl-github"></i>
-          </a>
-          <a href="https://linkedin.com/in/mofopefoluwa-faokunla-61abb622a/"
-            ><i class='bx bxl-linkedin'></i></a>
-          <a href="https://instagram.com/Mofope_foluwa/"
-            ><i class='bx bxl-instagram-alt' ></i></a>
-          <a href="https://twitter.com/Mofopefoluwa__/"
-            ><i class='bx bxl-twitter' ></i></a>
-        </div>
+                 
             </motion.div>
           </div>
           </motion.div>
