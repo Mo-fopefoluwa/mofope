@@ -15,6 +15,7 @@ const Portfolio = () => {
        className="wrapper">
         <div className="contained">
         <div className="heading">
+        <a className="anchor" id="portfolio"></a>
             <motion.div
             variants={fadeIn("left", "tween", 0.4, 1)}
             className='heads'>

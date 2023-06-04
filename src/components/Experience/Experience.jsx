@@ -15,6 +15,7 @@ const Experience = () => {
          variants={staggerChildren}
          viewport={{once: false, amount: 0.25}}
          className="contains">
+             <a className="anchor" id="experi"></a>
             <span className='primaryTextss'> My Work Experience</span>
 
             <div className="experiences">

@@ -42,7 +42,9 @@ const Hero = () => {
   }, []);
 
   return (
+   
     <div>
+      
       <div className="sections">
         <motion.div 
          initial= "hidden"
@@ -51,6 +53,7 @@ const Hero = () => {
          viewport={{once: false, amount: 0.25}}
           className="containers">
           <div className="upperElement">
+          <a className="anchor" id="hero"></a>
           <motion.span
           variants={fadeIn("right", "tween", 0.2, 1)}
              className='primaryText'>

@@ -11,7 +11,8 @@ const Skills = () => {
          whileInView="show"
          variants={staggerChildren}
          viewport={{once: false, amount: 0.25}}
-        class="services" id="services">
+        class="services">
+           <a className="anchor" id="skills"></a>
       <motion.h2 class="headingss">My <span>Skills</span></motion.h2>
       <div class="services-container">
        
